@@ -1,0 +1,27 @@
+1. User
+able to register himself
+able to login
+able to view all books
+able to search a book
+able to borrow a book
+able to return a book
+able to check it's borrow history
+able to pay fine for late payment
+
+2. Admin
+login into application
+update books
+remove books
+add books
+issue books to user
+check status of all books
+order a return to certain user
+
+
+//Based on the requirement we will design the database
+Entities
+1. User-> user_id,name,branch,passkey,designation,issue_history
+2. Books -> book_id,title,author,genre,qty,available,next_available
+if not available then next time available
+3. issue history -> issue_id,user_id,book_id,issue_date,expected_return_date,status,return_date,fine,issuer_id(user_id for which designation = admin)
+
